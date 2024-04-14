@@ -2,7 +2,7 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_xlider/flutter_xlider.dart';
 
 class FlutterSliderTooltip {
-  Widget Function(dynamic value)? custom;
+  Widget Function(dynamic value, String? side)? custom;
   String Function(String value)? format;
   TextStyle? textStyle;
   FlutterSliderTooltipBox? boxStyle;

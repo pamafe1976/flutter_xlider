@@ -2000,7 +2000,7 @@ class _FlutterSliderState extends State<FlutterSlider>
           key: (side == 'left') ? leftTooltipKey : rightTooltipKey,
 //            alignment: Alignment.center,
           child: (widget.tooltip != null && widget.tooltip!.custom != null)
-              ? widget.tooltip!.custom!(value)
+              ? widget.tooltip!.custom!(value, side)
               : Container(
                   padding: EdgeInsets.all(8),
                   decoration: _tooltipData.boxStyle!.decoration,
